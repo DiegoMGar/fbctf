@@ -320,7 +320,7 @@ fi
 
         log "Installing unison 2.48.3. Remember to install the same version on your host machine"
         package xz-utils
-        install_unison
+        package unison
     fi
 
     log "Creating attachments folder, and setting ownership to www-data"

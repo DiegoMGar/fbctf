@@ -14,6 +14,6 @@ ENV HHVM_DISABLE_NUMA true
 WORKDIR $HOME
 COPY . $HOME
 
-RUN apt-get update && apt-get -y install sudo apt-utils
+RUN apt-get update && apt-get -y install sudo apt-utils unzip
 RUN ./extra/provision.sh -m $MODE -c $TYPE -k $KEY -C $CRT -D $DOMAIN -e $EMAIL -s `pwd` --docker
 CMD ["./extra/service_startup.sh"]

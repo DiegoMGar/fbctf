@@ -1,0 +1,1 @@
+docker build --build-arg MODE=dev -t="diegomgar/fbctf" .
