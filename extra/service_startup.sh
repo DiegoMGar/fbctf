@@ -15,7 +15,7 @@ chown -R mysql:mysql /var/run/mysqld
 chown -R mysql:mysql /var/log/mysql
 chown -R www-data:www-data /var/www/fbctf
 
-sudo -u www-data service hhvm restart
+service hhvm restart
 service nginx restart
 service mysql restart
 service memcached restart
